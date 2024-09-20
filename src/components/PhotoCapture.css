@@ -1,0 +1,156 @@
+.photo-capture {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    display: block;
+    margin: 20px 0;
+  }
+  
+  .canvas {
+    display: none;
+  }
+  
+  .captured-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .photo-item {
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .photo-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .photo-name {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .delete-button {
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photo-item {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .video {
+      width: 100%;
+      height: auto;
+    }
+  
+    .button {
+      padding: 12px;
+      font-size: 18px;
+    }
+  }
+  
+
+  .select-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+  }
+  
+  .select-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .select-container select:hover {
+    border-color: #888;
+  }
+  
+  .select-container select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+  }
+  
+  .select-container::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .select-container select::-ms-expand {
+    display: none;
+  }
+  
